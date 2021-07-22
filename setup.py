@@ -10,12 +10,6 @@ except ImportError:
     from distutils.core import setup
 
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read().replace('.. :changelog:', '')
-
 dirname = os.path.dirname(__file__)
 
 test_requirements = [
@@ -29,7 +23,7 @@ setup(
     name='openupgradelib',
     version=openupgradelib.__version__,
     description=openupgradelib.__doc__,
-    long_description=readme + '\n\n' + history,
+    long_description='',
     author=openupgradelib.__author__,
     author_email=openupgradelib.__email__,
     url='https://github.com/OCA/openupgradelib',
